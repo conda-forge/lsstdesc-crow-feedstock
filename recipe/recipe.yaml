@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lsstdesc-crow
-  version: 1.0.2
+  version: "1.0.4"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lsstdesc_crow-${{ version }}.tar.gz
-  sha256: 39917171aad491f99f674902adca7293b80d378d57260d2dec53c708b66e9412
+  sha256: 26dce7e89f8ec22f5f9916d5fb9167c50680dc16f2b76fee3ff2ffc8711901ac
 
 build:
   number: 0
