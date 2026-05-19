@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: lsstdesc-crow
-  version: 1.0.2
+  version: "1.0.9"
   python_min: "3.11"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/lsstdesc_crow-${{ version }}.tar.gz
-  sha256: 39917171aad491f99f674902adca7293b80d378d57260d2dec53c708b66e9412
+  sha256: c5ae390e0056101000fdbe09a1073f18c1f13ff2efbeb356ec8e0414167b9395
 
 build:
   number: 0
@@ -27,11 +27,11 @@ requirements:
   run:
     - python >=${{ python_min }}
     - clmm
-    - numcosmo >=0.21.1
     - numpy >=2.0
     - pyccl >=2.8.0
     - scipy >=1.12
-
+  run_constraints:
+    - numcosmo >=0.21.1
 tests:
   - python:
       python_version: ${{ python_min }}.*
