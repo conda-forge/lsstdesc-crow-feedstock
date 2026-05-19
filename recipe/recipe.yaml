@@ -27,11 +27,11 @@ requirements:
   run:
     - python >=${{ python_min }}
     - clmm
-    - numcosmo >=0.21.1
     - numpy >=2.0
     - pyccl >=2.8.0
     - scipy >=1.12
-
+  run_constraints:
+    - numcosmo >=0.21.1
 tests:
   - python:
       python_version: ${{ python_min }}.*
